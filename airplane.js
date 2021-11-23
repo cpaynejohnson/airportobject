@@ -1,8 +1,7 @@
-class Plane  {
-    constructor (model) {
+class Airplane {
+    
+    constructor(model,number){
         this.model = model
-
+        this.number = number
     }
 }
-
-module.exports = Bag

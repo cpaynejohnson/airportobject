@@ -1,11 +1,14 @@
-class Passenger  {
-    constructor (docType, ticketClass) {
-        this.docType = docType
-        this.ticketClass = ticketClass
-        this.bags = []
+const Person = require('./person')
+
+class Passenger extends Person {
+    constructor (name, bags, passportNumber, seatNumber) {
+        super(name,bags)
+        this.passportNumber = passportNumber
+        this.seatNumber = seatNumber
     }
-    addbags(bag){
-        this.bags.push(bag)
+
+    callAttendant(){
+        console.log("Excuse me")
     }
-}   
+}
 module.exports = Passenger
